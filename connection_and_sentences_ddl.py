@@ -48,6 +48,8 @@ coches = [
     ('Renault', 'Clio', 22000),
     ('Mercedes', 'Clase c', 35000)
 ]
+
+#insertar el lotes
 cursor.executemany('INSERT INTO vehiculos values (null, %s, %s, %s)', coches)
 database.commit()
 

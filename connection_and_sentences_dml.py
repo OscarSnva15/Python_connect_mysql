@@ -19,7 +19,7 @@ result = cursor.fetchall()
 #consultar solo el primero vehiculo
 cursor.execute("select * from vehiculos where precio <= 150000.00")
 result = cursor.fetchone()
-print('primer result',result)
+#print('primer result',result)
 
 #eliminar registros de una tabla
 cursor.execute("delete from vehiculos where marca = 'seat' ")

@@ -14,6 +14,7 @@ database = mysql.connector.connect(
 cursor = database.cursor()
 cursor.execute("CREATE DATABASE IF NOT EXISTS master_python")
 
+#mostrar databases
 cursor.execute('SHOW DATABASES')
 
 for bd in cursor:
